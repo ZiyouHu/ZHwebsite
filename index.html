@@ -1,160 +1,104 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Ziyou Hu</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Ziyou Hu</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="icon" href="/Users/mhu/Desktop/myweb/favicon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
-</head>
-<body>
   
-<!-- Navbar -->
+<head>
+  <title>Ziyou Hu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" href="/Users/mhu/Desktop/myweb/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+</head>
+  
+<body>
+
+<!-- Navigation Bar-->
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
     <a href="https://www.linkedin.com/in/ziyou-hu" class="w3-bar-item w3-button w3-padding-large w3-hide-small"target="_blank">LinkedIn</a>
-    <a href="/Users/mhu/Desktop/ZH Resume.pdf" class="w3-bar-item w3-button w3-padding-large w3-hide-small"download="ZiyouHu_Resume">Resume</a>
+    <a href="files/ZH Resume.pdf" class="w3-bar-item w3-button w3-padding-large w3-hide-small"download="ZiyouHu_Resume">Resume</a>
     <p><a href="mhu@bowdoin.edu" class="w3-bar-item w3-button w3-padding-large w3-hide-small">mhu@bowdoin.edu</a></p>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
 </div>
 
+<!-- Introduction-->
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+  <p> Ziyou Hu</p>
+  <p class="w3-opacity"><i>Aspiring Software Engineer</i></p>
+  <img src="images/zh.JPG" width="200" height="192">
+  <p class="w3-justify">
   
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  </div>
-
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <p> Ziyou Hu</p>
-    <p class="w3-opacity"><i>Aspiring Software Engineer</i></p>
-    <img src="images/zh.JPG" width="200" height="192">
-    <p class="w3-justify"><div class="nes-container with-title">
-    <span class="title">Hello!</span>
-    <p>
-      I am a junior majoring in computer science and mathematics major from Bowdoin College.
-      <br>
-      I am an aspiring software engineer.
-      My journey with tech starts from mathematics.
-      I enjoy communicating ideas with people.
-      In addition, I am passionate about representation of women of color and queer people in the tech field.
-    </p>
-  </div>
-
- </div>
-
-<div class="w3-white" id="tour">
-   <div class="w3-half">
-        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-     <p class="w3-opacity w3-center"><i>Education</i></p><br>
-        <progress class="nes-progress is-pattern" value="63" max="100"></progress>
-     <p> B.A. @ Bowdoin College</p>
-      
-<progress class="nes-progress is-warning" value="100" max="100"></progress>
-     <p> Math Major</p>
-      
-<progress class="nes-progress is-error" value="30" max="100"></progress>
-     <p> Computer Science Major </p>
+  <div class="nes-container with-title">
+      <span class="title">Hello!</span>
+        <p>
+        I am a junior majoring in computer science and mathematics major from Bowdoin College.
+        <br>
+        I am an aspiring software engineer.
+        My journey with tech starts from mathematics.
+        I enjoy communicating ideas with people.
+        In addition, I am passionate about representation of women of color and queer people in the tech field.
+        </p>
    </div>
-   
-     </div>
-   
-   <div class="w3-half">
-         <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <p class="w3-opacity w3-center"><i>Computer Science Courses</i></p><br>
-        <ul>
+</div>
+  
+<!-- Education & CS Courses-->
+<div class="w3-container w3-content w3-center" style="max-width:900px" id="band">
+  
+  <!-- Education -->
+  <div class="column">
+    <p class="w3-opacity w3-center"><i>Education</i></p><br>
+    
+    <progress class="nes-progress is-pattern" value="63" max="100"></progress>
+    <p> B.A. @ Bowdoin College</p>
+    <progress class="nes-progress is-warning" value="100" max="100"></progress>
+    <p> Math Major</p>
+    <progress class="nes-progress is-error" value="30" max="100"></progress>
+    <p> Computer Science Major </p>
+  </div>
+  
+
+  <!-- CS Courses-->
+  <div class="column">
+    <p class="w3-opacity w3-center"><i>Computer Science Courses</i></p><br>
+
+      <div class="lists w3-center">
+        <ul class="nes-list is-circle">
           <li>Algorithms</li>
           <li>Computer Systems</li>
           <li>Data Structures</li>
-          <li>Computational Game Theory (upcoming)</li>
-          <li>Operating Systems (upcoming)</li>
+          <li>Computational Game Theory</li>
+          <li>Operating Systems</li>
         </ul>
     </div>
-   </div>
+ </div>
+</div>
+
+
+<!--Skills-->
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+  <div class="nes-container with-title">
+    <span class="title">Skills</span>
+    <p><font color=slateblue>Python    Java   C   R   HTML </p>
+    <p><font color=dodgerblue>Algorithms     git    Research   Math</p>
+    <p><font color=black></p>
   </div>
+</div>
 
-  <div class="w3-white" id="tour">
-     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-       <div class="nes-container with-title">
-          <span class="title">Skills</span>
-          <a href="#" class="nes-badge">
-          <span class="is-dark">Python</span>
-          </a>
-          <a href="#" class="nes-badge">
-          <span class="is-dark">Java</span>
-          </a>
-          <a href="#" class="nes-badge">
-          <span class="is-dark">C</span>
-          </a>
-          <a href="#" class="nes-badge">
-          <span class="is-dark">R</span>
-          </a>
-          <a href="#" class="nes-badge">
-          <span class="is-dark">HTML</span>
-        </a>
-
-        <a href="#" class="nes-badge">
-        <span class="is-primary">Algorithms</span>
-        </a>
-        <a href="#" class="nes-badge">
-          <span class="is-primary">git</span>
-        </a>
-
-        <a href="#" class="nes-badge">
-          <span class="is-success">Research</span>
-        </a>
-
-
-        <a href="#" class="nes-badge">
-          <span class="is-success">Math</span>
-        </a>
-      </div>
        
-         <br>
-         <br>
-       
-       <div class="nes-container with-title">
-         
-         
-  <p class="title">Awards<i class="nes-icon trophy is-small"></i></p>
-         <a href="#" class="nes-badge">
-     <i class="nes-icon trophy is-small"></i>
-  <span class="is-warning">GHC Scholar</span>
-</a>
+<!--Award-->
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+  <div class="nes-container with-title">
+    <p class="title">Awards<i class="nes-icon trophy is-small"></i></p>
+    <p><font color=eaaf41>GHC Scholar      Smyth Prize       Book Award      Dean's List</p>
+    <p><font color=black></p>
+  </div>
+</div>
 
-<a href="#" class="nes-badge">
-  <i class="nes-icon trophy is-small"></i>
-  <span class="is-warning">Smyth Prize</span>
-</a>
-
-<a href="#" class="nes-badge">
-  <i class="nes-icon trophy is-small"></i>
-  <span class="is-warning">Book Award</span>
-</a>
-
-<a href="#" class="nes-badge">
-  <i class="nes-icon trophy is-small"></i>
-  <span class="is-warning">Dean's List</span>
-</a>
   
-</div>
-</div>
-      
-  <div class="w3-black" id="tour">
+<!-- Work Experience. Make all into accordion -->
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <p class="w3-opacity w3-center"><i>Work Experience</i></p><br>
         <ul>
@@ -165,8 +109,8 @@
           <li>Quantiative Resoning Tutor at Bowdoin College(2023-2024)</li>
         </ul>
     </div>
-  </div>
-    <!-- Projects -->
+
+    <!-- Projects. Add the feature click to see more-->
   <div class="w3-white" id="tour">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <p class="w3-opacity w3-center"><i>Projects</i></p><br>
