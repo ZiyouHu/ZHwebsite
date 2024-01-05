@@ -9,6 +9,116 @@
   <link rel="icon" href="/Users/mhu/Desktop/myweb/favicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  <style>
+
+      .bg-one,
+      .bg-one ~ .content span{
+      background-color:#FF7F44;
+
+      }
+
+      .bg-two,
+      .bg-two ~ .content span{
+      background-color:#FFEF6F;
+
+      }
+
+      .bg-three,
+      .bg-three ~ .content span{
+      background-color:#5AC2FF;
+
+      }
+
+      .bg-four,
+      .bg-four ~ .content span{
+      background-color:#FF89A8;
+
+      }
+      .bg-five,
+      .bg-five ~ .content span{
+      background-color:#6EE09E;
+
+      }
+
+.tabs-box{
+  position:relative;
+  width:900px;
+  padding-left: 0px;
+}
+.tabs-box .acord{
+ position:relative;
+ overflow:hidden;
+ padding-left: 150px;
+}
+.tabs-box .acord label{
+  position:relative;
+  z-index: 1000;
+  display:block
+  color:black;
+  padding-left: 0px;
+  
+}
+.tabs-box .acord label i{
+  display:block;
+  position:absolute;
+  top:0;
+  right:0;
+  width:40px;
+  text-align: center;
+}
+.tabs-box .acord label,
+.tabs-box .acord label i,
+.tabs-box .acord i.fa-chevron-circle-down{
+    height:40px;
+    line-height: 40px;
+}
+.tabs-box .acord i.fa-chevron-circle-down{
+  position:absolute;
+  z-index: 1111;
+  top:0;
+  left:0;
+  width: 40px;
+  text-align: center;
+  -moz-transition:all .2s linear 0s;
+  -webkit-transition:all .2s linear 0s;
+  transition:all .2s linear 0s;
+}
+
+.tabs-box .acord input{
+  display:none;
+}
+
+.tabs-box .content{
+  position:relative;
+  overflow:hidden;
+  -moz-transition:height 0.1s linear 0s;
+  -webkit-transition: height 0.1s linear 0s;
+  transition: height 0.1s linear 0s;
+  height:0;
+  font-size:12px;
+  line-height:22px;
+  color:black;
+  text-align:left;
+}
+
+.tabs-box .content span.square{
+  display: block;
+  position: relative;
+  left: 10px;
+  top: -17px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+}
+.tabs-box input[type="checkbox"]:checked ~ div.content{
+  height:310px;
+  width-max:200px;
+  padding:10px;
+}
+.tabs-box input[type="checkbox"]:checked ~ i.fa-chevron-circle-down{
+transform:rotate(180deg);
+}
+    </style>
 </head>
   
 <body>
@@ -99,16 +209,130 @@
 
   
 <!-- Work Experience. Make all into accordion -->
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <p class="w3-opacity w3-center"><i>Work Experience</i></p><br>
+    <div class="w3-white" id="tour">
+<div class="w3-container w3-content" style="max-width:800px" "text-align: center;">
+  <p class="w3-opacity" style= "text-align: center;"><i>Work Experience</i></p><br>
+
+  
+  <div class="tabs-box">
+    <div class="acord">
+        <label for="tb-one" class="bg-one">
+          Software Engineer Intern at Amazon         
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-one">
+        <i class="fa fa-chevron-circle-down"></i>
+        <div class="content" >
+  <span class="square"></span>
+          <p><strong> 05/2024 - 08/2024</strong></p>
+
         <ul>
-          <li>Incoming Software Engineer at Amazon (Seattle)</li>
-          <li>Incoming Learning Assistant for CSCI 2200 Algorithms </li>
-          <li>Learning Assistant for MATH 2000 Linear Algebra (Feb-Dec 2023)</li>
-          <li>Tutor for CSCI 2101 Data Structures (Fall 2023)</li>
-          <li>Quantiative Resoning Tutor at Bowdoin College(2023-2024)</li>
+          <li>Collaborate with Amazon teams to 
+            <br> conceptualize and develop <br>
+            groundbreaking products with global<br>
+            impact</li>
+          <li>Leverage cutting-edge technology <br>
+            to address complex and wide-ranging <br>
+            challenges</li>
+          <li>Architect and design innovative <br>
+            technologies capable of operating <br>
+            seamlessly within a distributed <br>
+            computing environment</li>
         </ul>
+
+        </div>
     </div>
+
+    <div class="acord">
+        <label for="tb-two"  class="bg-two">
+          Learning Assistant - CSCI 2200 Algorithms
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-two">
+        <i class="fa fa-chevron-circle-down"></i>
+        <div class="content">
+          <span class="square"></span>
+          <p><strong>02/2024 - 05/2024</strong></p>
+        <ul>
+  <li>Support the class's performance and regularly<br>
+    communicate with the instructor</li>
+  <li>Conduct four-hour learning sessions every week <br>
+    to aid students in understanding algorithmic <br> concepts such as sorting problems, graphs, and <br>
+    dynamic programming</li>
+</ul>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-three"  class="bg-three">
+          Learning Assistant - MATH 2000 Linear Algebra
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-three">
+        <i class="fa fa-chevron-circle-down"></i>
+        <div class="content">
+          <span class="square"></span>
+           <p><strong>02/2023 - 12/2023</strong></p>
+          <ul>
+            <li>Conduct dynamic 2.5-hour weekly study <br>
+              sessions, adeptly explaining complex <br>
+              mathematical concepts like linear <br>
+              transformation and vector space.
+            </li>
+            <li>Encourage students to critically analyze<br>
+              practical applications of linear algebra, <br>
+              including ranking algorithms and image 
+              <br> processing. </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="acord">
+        <label for="tb-four"  class="bg-four">
+          Tutor - CSCI 2101 Data Structures
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-four">
+        <i class="fa fa-chevron-circle-down"></i>
+        <div class="content">
+          <span class="square"></span>
+        <ul>
+  <li>Conduct weekly one-on-one sessions with a <br> student from the class, each lasting one hour</li>
+  <li>Clarify and elaborate on data structure <br> concepts, such as trees and linked lists, <br>while creating practice problems to reinforce <br> the student's understanding</li>
+  <li>Offer support to students working on projects <br> that require a deep knowledge of data structures</li>
+</ul>
+
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-five"  class="bg-five">
+          Quantiative Resoning Tutor
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-five">
+        <i class="fa fa-chevron-circle-down"></i>
+        <div class="content">
+          <span class="square"></span>
+           <p><strong>09/2023 - 05/2024</strong></p>
+          <ul>
+            <li>Mentor students for 3 hours weekly<br>
+              in STEM courses like Introduction to<br>
+              Computer Science and Data Structure,<br>
+              enhancing their quantitative <br>
+              reasoning abilities.
+              </li>
+            <li>Illustrate computer science <br>
+              concepts, such as linked lists <br>
+              and hash maps, through drawings <br>
+              and code examples, while <br>
+              cultivating students’ skills in<br>
+              code design and debugging.
+            </li>
+            </ul>
+        </div>
+    </div>
+
+
+  </div>
+</div>
+  </div>
 
     <!-- Projects. Add the feature click to see more-->
   <div class="w3-white" id="tour">
